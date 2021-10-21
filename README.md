@@ -14,4 +14,4 @@
 - Blank line rule: There are two empty lines above and beneath the function definition respectively, one blank lin beneath a cyle.  
 - Annotation rules: Tab two space between code and a line annotation. 
 - Space before and after operator
-- String: Only use double quotation mards.
+- String: Only use single quotation mards.
