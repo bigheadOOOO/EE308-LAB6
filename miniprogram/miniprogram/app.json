@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/login"
+  ],
+  "window": {
+    "backgroundTextStyLe": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "GCTAS",
+    "navigationBarTextStyLe": "black"
+    },
+    
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
