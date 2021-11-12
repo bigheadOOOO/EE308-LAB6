@@ -1,1 +1,32 @@
 /* pages/2_4mine/mine.wxss */
+
+.myimage{
+  left: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+.myname{
+  left: 25px;
+  top: 15px;
+  position: relative;
+  z-index: -1;
+}
+
+.twosubpage{
+  top: 15px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.mycollection{
+  top: 120px;
+  left: 20px;
+  position: absolute;
+
+}

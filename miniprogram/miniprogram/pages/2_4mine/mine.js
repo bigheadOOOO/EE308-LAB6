@@ -1,11 +1,14 @@
 // pages/2_4mine/mine.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    location: "122",
+    myname: "User",
+    myimage: "https://s3.bmp.ovh/imgs/2021/10/77a830cbddfff9a8.png",
   },
 
   /**
@@ -19,6 +22,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    
 
   },
 
@@ -26,7 +30,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.setData({
+      location: app.globalData.userlocation,
+      myname: app.globalData.username,
+      myimage: app.globalData.userimage,
+    });
   },
 
   /**

@@ -1,2 +1,10 @@
 <!--pages/2_4mine/mine.wxml-->
-<text>pages/2_4mine/mine.wxml</text>
+<view>
+  <image class="myimage" src="{{myimage}}"></image>
+  <text class="myname">{{myname}}</text>
+  <text class="mycollection">My collection</text>
+  <view class="twosubpage">
+    <image></image>
+  </view>
+</view>
+
