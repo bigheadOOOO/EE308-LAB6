@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/1_login/login",
+    "pages/2_1home/home",
+    "pages/2_2team/team",
+    "pages/2_3message/message",
+    "pages/2_4mine/mine"
+    
+  ],
+  "window": {
+    "backgroundTextStyLe": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "GCTAS",
+    "navigationBarTextStyLe": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/2_1home/home",
+      "text": "HOME",
+      "iconPath": "lab7/home.png",
+      "selectedIconPath": "lab7/home.png"
+    },
+    {
+      "pagePath": "pages/2_2team/team",
+      "text": "TEAM",
+      "iconPath": "lab7/mine.png",
+      "selectedIconPath": "lab7/team.png"
+    },
+    {
+      "pagePath": "pages/2_3message/message",
+      "text": "MESSAGE",
+      "iconPath": "lab7/mine.png",
+      "selectedIconPath": "lab7/message.png"
+    },
+    {
+      "pagePath": "pages/2_4mine/mine",
+      "text": "MINE",
+      "iconPath": "lab7/mine.png",
+      "selectedIconPath": "lab7/mine.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
