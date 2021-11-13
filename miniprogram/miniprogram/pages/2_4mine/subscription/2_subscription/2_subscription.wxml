@@ -1,4 +1,4 @@
-<!--pages/2_4mine/mine.wxml-->
+<!--pages/2_4mine/subscription/2_subscription/2_subscription.wxml-->
 <view>
   <!-- image and username -->
   <image class="myimage" src="{{myimage}}"></image>
@@ -8,12 +8,10 @@
   <text style="top:80px; left:20px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 6px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
   <text style="top:80px; left:130px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 6px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
 
-  <!-- Two subpages' enterances -->
-  <view class="twosubpage">
-    <image></image>
-  </view>
-  
-  <!-- collection -->
-  <text class="mycollection">My collection</text>
+  <text class="select">
+    <text wx:if="2"> one way subscription </text> <text style="left: 6%; position: relative; z-index: 1;">two ways subscription </text> 
+  </text>
+  <view class="selectedleft"></view>
+  <view class="selectedright"></view>
+  <view class="divline"></view>
 </view>
-

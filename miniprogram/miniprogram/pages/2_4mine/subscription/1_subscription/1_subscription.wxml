@@ -1,0 +1,34 @@
+<!--pages/2_4mine/subscription/subscription.wxml-->
+<view>
+  <!-- image and username -->
+  <image class="myimage" src="{{myimage}}"></image>
+  <text class="myname" style="font-weight:bold; font-family:'宋体';">{{myname}}</text>
+
+  <!-- subsription condition -->
+  <text style="top:80px; left:20px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 6px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
+  <text style="top:80px; left:130px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 6px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
+
+  <text class="select">
+    <text wx:if="{{another}}"> 
+      <text style="color: rgb(153, 151, 248);"> one way subscription </text> 
+      <text style="left: 6%; position: relative; color: #b0b1af;" bindtap="clickRight"> two way subscription </text> 
+    </text>
+    <text wx:else="">
+      <text style="color: #b0b1af; height: 20px; width: 40%;" bindtap="clickRight" mode="scaleToFill"> one way subscription </text> 
+      <text style="left: 6%; position: relative; color: rgb(153, 151, 248);">two ways subscription </text> </text>
+
+  </text>
+  
+  <view wx:if="{{another}}"> 
+    <view class="selectedright" style="background: #E0E3DA ;"></view>
+    <view class="selectedleft" style="background: hsl(249, 90%, 80%);"></view>  
+  </view>
+
+  <view wx:else="">
+    <view class="selectedright" style="background: hsl(249, 90%, 80%);"></view>
+    <view class="selectedleft" style="background: #E0E3DA ;"></view>  
+  </view>
+
+  
+  <view class="divline"></view>
+</view>

@@ -1,0 +1,53 @@
+/* pages/2_4mine/subscription/2_subscription/2_subscription.wxss */
+
+.myimage{
+  left: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+.myname{
+  left: 25px;
+  top: -15px;
+  position: relative;
+  z-index: -1;
+}
+
+.select{
+  font-size:12px; 
+  left:8%; 
+  top: 25%; 
+  position: absolute; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.selectedright{
+  position: absolute;
+  background: #E0E3DA;
+  width: 45%;
+  height: 2px;
+  left: 5%;
+  top: 28.6%;
+}
+
+.selectedleft{
+  position: absolute;
+  background: hsl(249, 90%, 80%);
+  width: 45%;
+  height: 2px;
+  right: 5%;
+  top: 28.6%;
+}
+
+.divline{
+  position: absolute;
+  background: #E0E3DA;
+  width: 90%;
+  height: 2px;
+  left: 5%;
+  top: 29%;
+}

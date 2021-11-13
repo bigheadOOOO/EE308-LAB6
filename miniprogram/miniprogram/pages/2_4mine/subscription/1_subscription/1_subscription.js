@@ -1,4 +1,4 @@
-// pages/2_4mine/mine.js
+// pages/2_4mine/subscription/subscription.js
 const app = getApp()
 Page({
 
@@ -11,8 +11,22 @@ Page({
     myimage: "https://s3.bmp.ovh/imgs/2021/10/77a830cbddfff9a8.png",
     numoffollowering: 0,
     numoffollower: 0,
+    another: 1,
   },
 
+  clickLeft:function(){
+    var that = this;
+    that.setData({
+      another: 0,
+    })
+  },
+
+  clickRight:function(){
+    var that = this;
+    that.setData({
+      another: 1,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
