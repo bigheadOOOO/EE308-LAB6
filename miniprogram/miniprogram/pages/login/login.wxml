@@ -1,7 +1,0 @@
-<!--pages/login.wxml-->
-<!--页面根标签-->
-<view>
-	<!--pics文件夹下的background.jpg文件-->
-	<image class="background" bindtap="GetUserProfile" src="https://s3.bmp.ovh/imgs/2021/11/432572c3637c9d26.jpg" mode="aspectFill"></image>
-	<!--页面其它部分-->
-</view>
