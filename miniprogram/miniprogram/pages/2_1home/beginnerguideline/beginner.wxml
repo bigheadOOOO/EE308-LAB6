@@ -1,0 +1,57 @@
+<!--pages/2_1home/beginnerguideline/beginner.wxml-->
+<view class="background">
+  <view class="left">
+    <view wx:if="{{IDE}}" class="ide" style="color: cornflowerblue;">IDE</view>
+    <view wx:else="{{IDE}}" class="ide" bindtap="clickide">IDE</view>
+    <view wx:if="{{adobe}}" class="ide" style="color: cornflowerblue;">Adobe</view>
+    <view wx:else="{{adobe}}" class="ide" bindtap="clickadobe">Adobe</view>
+    <view wx:if="{{office}}" class="ide" style="color: cornflowerblue;">Office</view>
+    <view wx:else="{{office}}" class="ide" bindtap="clickoffice">Office</view>
+  </view>
+  <view class="line" ></view>
+  <!-- IDE -->
+  <view wx:if="{{IDE}}" class="right" style="font-weight:bold;">
+    <view class="eachrow">
+      <view class="subsquare" bindtap="clickmatlab">MATLAB</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare" bindtap="clickpycharm">PYCHARM</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare" bindtap="clickvscode">Vscode</view>
+    </view>
+    <view class="eachrow" style="left: 48%;">
+      <view class="subsquare" bindtap="clickmplab"> MPLAB</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare" bindtap="clickjdk">JDK</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare" bindtap="clickROS">ROS</view>
+    </view>
+  </view>
+
+  <!-- Adobe -->
+  <view wx:if="{{adobe}}" class="right" style="font-weight:bold;">
+    <view class="eachrow">
+      <view class="subsquare"> PS</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare">PR</view>
+    </view>
+    <view class="eachrow" style="left: 48%;">
+      <view class="subsquare">AE</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare">AD</view>
+    </view>
+  </view>
+
+  <!-- Office -->
+  <view wx:if="{{office}}" class="right" style="font-weight:bold;">
+    <view class="eachrow">
+      <view class="subsquare" bindtap="clickword"> WORD</view>
+      <view style="height: 20px"></view>
+      <view class="subsquare" bindtap="clickexcel">EXCEL</view>
+      <view style="height: 20px"></view>
+    </view>
+    <view class="eachrow" style="left: 48%;">
+      <view class="subsquare" bindtap="clickppt">PPT</view>
+    </view>
+  </view>
+</view>
+
