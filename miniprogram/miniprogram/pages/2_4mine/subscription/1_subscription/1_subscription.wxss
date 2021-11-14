@@ -48,8 +48,21 @@
   top: 29%;
 }
 
-.singleaccount{
 
+.singleuserimage{
+  top: 5px;
+  left: 0%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.singleusername{
+  top: 5px;
+  left: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .subdivline{

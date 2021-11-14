@@ -1,0 +1,7 @@
+/* pages/2_4mine/sharelocation/location.wxss */
+.contain{
+  top: 5%;
+  left: 5%;
+  height: 100%;
+  position: absolute;
+}

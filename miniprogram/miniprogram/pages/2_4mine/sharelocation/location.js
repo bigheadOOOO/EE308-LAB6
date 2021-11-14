@@ -1,4 +1,4 @@
-// pages/2_4mine/mine.js
+// pages/2_4mine/sharelocation/location.js
 const app = getApp()
 Page({
 
@@ -6,15 +6,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-    location: "122",
-    myname: "User",
-    myimage: "https://s3.bmp.ovh/imgs/2021/10/77a830cbddfff9a8.png",
-    numoffollowering: 0,
-    numoffollower: 0,
+
   },
-  clicksetting:function(){
-    wx.navigateTo({
-      url: 'sharelocation/location',
+  clickyes:function(){
+    app.globalData.sharelocation=1;
+    wx.switchTab({
+      url: '../mine',
+    })
+  },
+  clickno:function(){
+    app.globalData.sharelocation=0;
+    wx.switchTab({
+      url: '../mine',
     })
   },
   /**
@@ -28,7 +31,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
 
   },
 
@@ -36,11 +38,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.setData({
-      location: app.globalData.userlocation,
-      myname: app.globalData.username,
-      myimage: app.globalData.userimage,
-    });
+
   },
 
   /**

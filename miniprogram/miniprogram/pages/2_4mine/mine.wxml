@@ -1,16 +1,18 @@
 <!--pages/2_4mine/mine.wxml-->
 <view>
+  <button class="setting" bindtap="clicksetting">Setting</button>
   <!-- image and username -->
   <image class="myimage" src="{{myimage}}"></image>
   <text class="myname" style="font-weight:bold; font-family:'宋体';">{{myname}}</text>
 
   <!-- subsription condition -->
-  <text style="top:80px; left:20px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 6px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
-  <text style="top:80px; left:130px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 6px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
+  <text style="top:80px; left:15px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 3px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
+  <text style="top:80px; left:115px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 3px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
 
   <!-- Two subpages' enterances -->
-  <view class="twosubpage">
-    <image></image>
+  <view class="mysubscription">
+    <image src=""></image>
+    <text style="font-size: smaller; position: relative; color: dimgrey; left: 0rpx; top: 132rpx">Subscriptions</text>
   </view>
   <!-- collection -->
   <text class="mycollection">My collection</text>

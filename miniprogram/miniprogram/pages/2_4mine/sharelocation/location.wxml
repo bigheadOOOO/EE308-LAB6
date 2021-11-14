@@ -1,0 +1,8 @@
+<!--pages/2_4mine/sharelocation/location.wxml-->
+<view class="contain">
+  <text style="font-weight:bold; font-size: larger;">Share Your Location?</text>
+  <view>
+    <button type="primary" style="margin: 0 auto; width: 60%; top: 104rpx; position: relative; left: -54rpx; z-index: 3;" bindtap="clickyes">Yes</button>
+    <button type="default" style="margin: 0 auto; width: 60%; position: relative; left: 275rpx; top: 10rpx;z-index: 3;" bindtap="clickno">No</button>
+  </view>
+</view>

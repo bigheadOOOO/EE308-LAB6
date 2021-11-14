@@ -1,0 +1,10 @@
+<!--pages/othersaccount/othersaccount.wxml-->
+
+<view>
+  <!-- image and username -->
+  <image class="hisimage" src="{{hisimage}}"></image>
+  <text class="hisname" style="font-weight:bold; font-family:'宋体';">{{hisname}}</text>
+
+  <button bindtap="subscript">Subscript {{hisname}}</button>
+</view>
+
