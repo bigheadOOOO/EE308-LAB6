@@ -1,5 +1,4 @@
 /* pages/2_2team/team.wxss */
-/* pages/group/group.wxss */
 .titleform{
     color:gray;
     font-family: cursive;
