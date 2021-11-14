@@ -3,11 +3,12 @@
     "pages/1_login/login",
     "pages/2_1home/home",
     "pages/2_2team/team",
-    "pages/2_3message/message",
     "pages/2_4mine/mine",
     "pages/2_4mine/subscription/1_subscription/1_subscription",
     "pages/2_4mine/subscription/2_subscription/2_subscription",
-    "pages/2_1home/beginnerguideline/beginner"
+    "pages/2_1home/beginnerguideline/beginner",
+    "pages/othersaccount/othersaccount",
+    "pages/2_4mine/sharelocation/location"
   ],
   "window": {
     "backgroundTextStyLe": "light",
