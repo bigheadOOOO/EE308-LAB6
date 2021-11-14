@@ -40,7 +40,7 @@
   
   .drop-down-background{
     position: fixed;
-    top: 188rpx;
+    top: 100rpx;
     left: 0;
     bottom: 0;
     right: 0;
@@ -48,8 +48,8 @@
   }
   .drop-down-flex{
     position: fixed;
-    top: 188rpx;
-    left: 0;
+    top: 100rpx;
+    left: 360rpx;
     width: 100%;
     z-index: 222;
     max-height: 100%;
