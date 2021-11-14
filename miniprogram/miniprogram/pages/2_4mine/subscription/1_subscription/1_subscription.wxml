@@ -7,28 +7,21 @@
   <!-- subsription condition -->
   <text style="top:80px; left:20px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 6px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
   <text style="top:80px; left:130px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 6px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
-
-  <text class="select">
-    <text wx:if="{{another}}"> 
-      <text style="color: rgb(153, 151, 248);"> one way subscription </text> 
-      <text style="left: 6%; position: relative; color: #b0b1af;" bindtap="clickRight"> two way subscription </text> 
-    </text>
-    <text wx:else="">
-      <text style="color: #b0b1af; height: 20px; width: 40%;" bindtap="clickRight" mode="scaleToFill"> one way subscription </text> 
-      <text style="left: 6%; position: relative; color: rgb(153, 151, 248);">two ways subscription </text> </text>
-
-  </text>
-  
-  <view wx:if="{{another}}"> 
-    <view class="selectedright" style="background: #E0E3DA ;"></view>
-    <view class="selectedleft" style="background: hsl(249, 90%, 80%);"></view>  
+  <!-- selections -->
+  <view class="select" wx:if="{{oneway}}">
+      <text style="color: rgb(153, 151, 248); position: relative; left: 26rpx; top: 0rpx; width: 331rpx; height: 61rpx; display: block; box-sizing: border-box"> one way subscription </text> 
+      <text style="position: relative; color: #b0b1af; top: 0rpx; left: 60rpx; height: 61rpx; width: 422rpx; display: block; box-sizing: border-box" bindtap="clickRight"> two ways subscription </text> 
   </view>
-
-  <view wx:else="">
-    <view class="selectedright" style="background: hsl(249, 90%, 80%);"></view>
-    <view class="selectedleft" style="background: #E0E3DA ;"></view>  
-  </view>
-
   
+  <view wx:if="{{oneway}}" class="selectedleft" style="background: hsl(249, 90%, 80%); position: absolute; top: 338rpx"></view>  
+  
+  <view class="select" wx:if="{{twoway}}">
+      <text style="color: #b0b1af; position: relative; left: 26rpx; top: 0rpx; width: 331rpx; height: 61rpx; display: block; box-sizing: border-box" bindtap="clickLeft"> one way subscription </text> 
+      <text style="left: 60rpx; position: relative; color: rgb(153, 151, 248); top: 0rpx; height: 61rpx; width: 422rpx; display: block; box-sizing: border-box; top: 0rpx">two ways subscription </text> 
+  </view>
+  <view wx:if="{{twoway}}" class="selectedright" style="background: hsl(249, 90%, 80%);"></view>
   <view class="divline"></view>
+
+  <!-- accounts -->
+  
 </view>

@@ -6,6 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    oneway: 1,
+    twoway: 0,
     location: "122",
     myname: "User",
     myimage: "https://s3.bmp.ovh/imgs/2021/10/77a830cbddfff9a8.png",
@@ -17,14 +19,16 @@ Page({
   clickLeft:function(){
     var that = this;
     that.setData({
-      another: 0,
+      oneway: 1,
+      twoway: 0
     })
   },
 
   clickRight:function(){
     var that = this;
     that.setData({
-      another: 1,
+      oneway: 0,
+      twoway: 1
     })
   },
   /**

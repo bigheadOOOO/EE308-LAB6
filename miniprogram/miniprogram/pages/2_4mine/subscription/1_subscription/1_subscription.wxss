@@ -16,9 +16,8 @@
 }
 
 .select{
+  width: 675rpx; height: 884rpx; display: flex; box-sizing: border-box; left: 38rpx; top: 296rpx;
   font-size:12px; 
-  left:8%; 
-  top: 25%; 
   position: absolute; 
   flex-direction: row; 
   justify-content: space-between;
@@ -26,22 +25,36 @@
 
 .selectedleft{
   position: absolute;
-  width: 45%;
+  width: 43%;
   height: 2px;
   left: 5%;
-  top: 28.6%;
+  top: 3.7%;
 }
 
 .selectedright{
   position: absolute;
-  width: 45%;
+  width: 43%;
   height: 2px;
   right: 5%;
-  top: 28.6%;
+  top: 338rpx
 }
 
 .divline{
   position: absolute;
+  background: #E0E3DA;
+  width: 90%;
+  height: 2px;
+  left: 5%;
+  top: 29%;
+}
+
+.singleaccount{
+
+}
+
+.subdivline{
+  position: relative;
+  z-index: 3;
   background: #E0E3DA;
   width: 90%;
   height: 2px;

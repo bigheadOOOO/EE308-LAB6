@@ -25,8 +25,35 @@
 }
 
 .mycollection{
-  top: 120px;
+  top: 150px;
   left: 20px;
   position: absolute;
 
+}
+
+.collections{
+  top: 200px;
+  left: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.singlecollection{
+  top: 150px;
+  left: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.singleuserimage{
+  top: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.singleusername{
+  top: 5px;
+  left: 30px;
+  position: relative;
+  z-index: 2;
 }

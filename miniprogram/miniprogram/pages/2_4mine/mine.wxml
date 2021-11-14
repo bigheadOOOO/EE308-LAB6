@@ -12,8 +12,14 @@
   <view class="twosubpage">
     <image></image>
   </view>
-  
   <!-- collection -->
   <text class="mycollection">My collection</text>
+  <!-- collections -->
+  <view class="collections">
+    <view class="singlecollection">
+      <image></image>
+      <text></text>
+    </view>
+  </view>
 </view>
 
