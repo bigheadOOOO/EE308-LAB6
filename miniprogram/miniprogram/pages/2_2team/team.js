@@ -7,7 +7,7 @@ Page({
     data: {
         searchResult:false,
         screen:"All",
-        screenDown: { screenDown:["All","Only my project","Only my follow"],screen:0},
+        screenDown: { screenDown:["All","Only my project","Only my follow"],screen:0},//screenDown筛选选项，screen对应索引，用于前段渲染判断
         screenFlag:false,//控制综合下拉框是否显示
         screenColor: false,
       },
