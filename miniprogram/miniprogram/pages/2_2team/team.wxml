@@ -18,7 +18,9 @@
     </view>
   </view>
 </view>
+<!-- 根据筛选结果显示后端返回用户所在的组-->
 <block wx:if="{{screenDown.screen==0}}">
+<!-- 放显示内容代码 建议模块化 下面是样例-->
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 56rpx">My project</text>
   <view wx:for="{{groupnumber}}" wx:key="index">
     <view class="groupcard" style="position: relative; left: 52rpx; top: 104rpx">
