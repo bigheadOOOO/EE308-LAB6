@@ -26,12 +26,5 @@ Page({
       url: '../2_1home/home'})
   },
 
-  // bind event: click the cake to jump to next page
-  clicked: function()
-  {
-      // jump
-      wx.redirectTo({
-          url: '../1_rule/rule'})
-  },
 
 })
