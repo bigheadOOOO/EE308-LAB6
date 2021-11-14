@@ -28,3 +28,13 @@ Page({
 
 
 })
+addData(){
+   db.collection("demolist").add({
+     data:{
+       usernamee:username,//res.userInfo.nickName
+       userimagee:userimage,//res.userInfo.avatarUrl
+     }
+   }).then(res=>{
+     console.log(res);
+   })
+ },
