@@ -4,41 +4,47 @@
     "pages/2_1home/home",
     "pages/2_2team/team",
     "pages/2_3message/message",
-    "pages/2_4mine/mine"
-    
+    "pages/2_4mine/mine",
+    "pages/2_4mine/subscription/1_subscription/1_subscription",
+    "pages/2_4mine/subscription/2_subscription/2_subscription",
+    "pages/2_1home/beginnerguideline/beginner"
   ],
   "window": {
     "backgroundTextStyLe": "light",
-    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarBackgroundColor": "#B4AAFF",
     "navigationBarTitleText": "GCTAS",
     "navigationBarTextStyLe": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/2_1home/home",
-      "text": "HOME",
-      "iconPath": "lab7/home.png",
-      "selectedIconPath": "lab7/home.png"
-    },
-    {
-      "pagePath": "pages/2_2team/team",
-      "text": "TEAM",
-      "iconPath": "lab7/mine.png",
-      "selectedIconPath": "lab7/team.png"
-    },
-    {
-      "pagePath": "pages/2_3message/message",
-      "text": "MESSAGE",
-      "iconPath": "lab7/mine.png",
-      "selectedIconPath": "lab7/message.png"
-    },
-    {
-      "pagePath": "pages/2_4mine/mine",
-      "text": "MINE",
-      "iconPath": "lab7/mine.png",
-      "selectedIconPath": "lab7/mine.png"
-    }
-  ]
+    "backgroundColor": "#B4AAFF",
+    "color": "#000000",
+    "selectedColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/2_1home/home",
+        "text": "HOME",
+        "iconPath": "lab7/home.png",
+        "selectedIconPath": "lab7/_home.png"
+      },
+      {
+        "pagePath": "pages/2_2team/team",
+        "text": "TEAM",
+        "iconPath": "lab7/team.png",
+        "selectedIconPath": "lab7/_team.png"
+      },
+      {
+        "pagePath": "pages/2_3message/message",
+        "text": "MESSAGE",
+        "iconPath": "lab7/message.png",
+        "selectedIconPath": "lab7/_message.png"
+      },
+      {
+        "pagePath": "pages/2_4mine/mine",
+        "text": "MINE",
+        "iconPath": "lab7/mine.png",
+        "selectedIconPath": "lab7/_mine.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
