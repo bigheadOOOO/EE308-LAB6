@@ -1,66 +1,49 @@
 // pages/home/home.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    //设置标记点
+    movies:[
+      {url:'http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg'},
+      {url:'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg'}
+    ],
+    //当前定位位置
+    latitude:'',
+    longitude: '',
+    },
+    onload:function name(params) {
+      
+    },
+    onLoad() {
+    //获取当前位置
+    wx.getLocation({
+    type: 'gcj02',
+    success: (res) => {
+    console.log(res)
+    this.setData({
+    latitude: res.latitude,
+    longitude: res.longitude
+    })
+    }
+    })
+    },
+  suo:function name(params) {
+    wx.navigateTo({
+      url: './2_5search/search/search',
+    })
   },
-  
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  pl_fx:function name(params) {
+    wx.navigateTo({
+      url: './beginnerguideline/beginner',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onPullDownRefresh:function(e)
+  {
+    console.log(e)
   }
+  
 })
