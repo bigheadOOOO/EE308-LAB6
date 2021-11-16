@@ -8,13 +8,19 @@
     "pages/2_4mine/subscription/2_subscription/2_subscription",
     "pages/2_1home/beginnerguideline/beginner",
     "pages/othersaccount/othersaccount",
-    "pages/2_4mine/sharelocation/location"
+    "pages/2_4mine/sharelocation/location",
+    "pages/2_3message/message"
   ],
   "window": {
     "backgroundTextStyLe": "light",
     "navigationBarBackgroundColor": "#B4AAFF",
     "navigationBarTitleText": "GCTAS",
     "navigationBarTextStyLe": "black"
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
   },
   "tabBar": {
     "backgroundColor": "#B4AAFF",
@@ -50,3 +56,4 @@
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }
+
