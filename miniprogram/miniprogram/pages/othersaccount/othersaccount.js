@@ -11,15 +11,6 @@ Page({
     hisname: "",
   },
 
-  // store his infomation
-  subscript:function(){
-    mysubscription.add({
-      data:{
-        name: hisname,
-        img: hisimage
-      },
-    })
-  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -32,7 +23,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    // mysubscription.add({
+    //   data:{
+    //     name: hisname,
+    //     img: hisimage
+    //   },
+    // })
   },
 
   /**
