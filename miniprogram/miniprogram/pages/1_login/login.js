@@ -18,6 +18,7 @@ Page({
       success:function(res){
         var n = res.userInfo.nickName;
         var im = res.userInfo.avatarUrl;
+        
         allusers.get({
           success:function(re){
             console.log(re);
@@ -30,15 +31,17 @@ Page({
             }if (ok == 0){ // 没有在数据库中，就加入数据库
               allusers.add({
                 data:{
-                  name: res.userInfo.nickName,
-                  img: res.userInfo.avatarUrl,
+                  username: res.userInfo.nickName,
+                  userimage: res.userInfo.avatarUrl,
+                  WechatID:res.result.wxInfo.OPENID
                 }
               })
             }
           }
         })
         app.globalData.username=res.userInfo.nickName,
-        app.globalData.userimage=res.userInfo.avatarUrl
+        app.globalData.userimage=res.userInfo.avatarUrl,
+        app.globalData.WechatID=res.result.wxInfo.OPENID
       },
       fail:function(){
       }
