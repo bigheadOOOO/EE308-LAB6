@@ -8,35 +8,18 @@
     </view>
     <view class='sousuo'>搜索</view>
   </view>
-<!--轮播图-->
-
-<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
-      <block wx:for="{{movies}}" wx:for-index="index">  
-        <swiper-item>  
-          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
-        </swiper-item>  
-      </block>  
-    </swiper>  
-
-
 
 <!--guideline-->
-<button style="width:700rpx;height: 550rpx;padding:0;">  
-  <image src="/../lab7/Beginner_guideline.png" class="fx_img" bindtap="pl_fx"></image>
-</button>
-<!--map-->
-<text class='location'>LOCATION</text>
+<view  class="guide" >
+  <image mode="aspectFit" src="../../lab7/指引.png" bindtap="pl_fx" style="top: 0%; width: 30%;"></image>
+</view>
 
-<view>
-<map id="map"
-longitude="{{longitude}}"
-latitude="{{latitude}}"
-scale="14"
-markers="{{markers}}"
-bindmarkertap="markertap"
-bindregionchange="regionchange"
-show-location
-style="width: 100%; height: 300px;"
->
-</map>
+<!--map-->
+<text class='location'>LOCATION
+  <text style="font-size: 12px;">click to show</text>
+</text>
+<view bindtap="clickmap">
+  <image class="mapchina" mode="aspectFill"  src="../../lab7/地图.png"></image>
+  <!-- 福建省 北纬23度30分至28度22分，东经115度50分至120度40分之间 -->
+  <image wx:if="{{Fujian}}" class="fujian" src="../../lab7/mine.png" style="position: absolute;"></image>
 </view>

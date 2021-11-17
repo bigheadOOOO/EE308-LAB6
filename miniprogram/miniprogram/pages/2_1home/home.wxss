@@ -39,11 +39,7 @@
   text-align: center;
 }
 
-.location{
-  font-size: 15px;
-  color: grey;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 .swiper-container{
   position: relative;
@@ -76,3 +72,36 @@
   background: #f80;
   color:#fff;
 }
+
+.mapchina{
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  height: 80%;
+}
+
+.guide{
+  top: -8%;
+  height: 35%;
+  width: 100%;
+  display:flex;                    
+  justify-content: center;
+  position: absolute;
+}
+.location{
+  top: 28%;
+  font-size: 15px;
+  color: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+}
+
+.fujian{
+  top: 76%;
+  left: 76%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+

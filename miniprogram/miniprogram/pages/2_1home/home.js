@@ -1,5 +1,5 @@
 // pages/home/home.js
-
+const app = getApp()
 Page({
 
   /**
@@ -12,33 +12,33 @@ Page({
       {url:'http://img04.tooopen.com/images/20130617/tooopen_21241404.jpg'}
     ],
     //当前定位位置
-    latitude:'',
-    longitude: '',
-    },
-    onload:function name(params) {
-      
-    },
-    onLoad() {
-    //获取当前位置
-    wx.getLocation({
-    type: 'gcj02',
-    success: (res) => {
-    console.log(res)
-    this.setData({
-    latitude: res.latitude,
-    longitude: res.longitude
-    })
+    userlatitude: 0,
+    userlongitude: 0,
+    Fujian: 0,
+    Beijing: 0,
+    Tianjing: 0,
+    Shanghai: 0,
+    Chongqing: 0
+  },
+
+  clickmap: function (optinal) {
+    var that = this;
+    var mylocationofchina = app.globalData.myprovince
+    console.log( app.globalData.myprovince)
+    if(mylocationofchina == "Fujian"){
+      that.setData({
+        Fujian: 1
+      }) 
     }
-    })
-    },
+  },
   suo:function name(params) {
     wx.navigateTo({
-      url: './2_5search/search/search',
+      url: '../2_5search/search/search',
     })
   },
   pl_fx:function name(params) {
     wx.navigateTo({
-      url: './beginnerguideline/beginner',
+      url: '../beginnerguideline/beginner',
     })
   },
   onPullDownRefresh:function(e)
