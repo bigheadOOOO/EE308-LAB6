@@ -8,46 +8,108 @@ Page({
    * data
    */
   data: {
+    province: "",
+    city: "",
+    ok: false,
+    exist: 0
   },
 
   GetUserProfile(e) {
     var that = this
-    var ok = 0;
+    var n = app.globalData.username
+    var im = app.globalData.userimage
     wx.getUserProfile({
       desc:"正在获取,//不写不弹提示框",
       success:function(res){
+        app.globalData.username=res.userInfo.nickName,
+        app.globalData.userimage=res.userInfo.avatarUrl
         var n = res.userInfo.nickName;
         var im = res.userInfo.avatarUrl;
-        
-        allusers.get({
-          success:function(re){
-            console.log(re);
-            for(i = 0; i < length(re); i++){
-              if ((n in re[i])&&(im in re[i])){
-              }else{ // 发现数据库中已存在该数据
-                ok = 1;
+        that.setData({
+          ok: true
+        })
+      },
+    })
+    console.log(that.data.ok)
+    if(that.data.ok == true)
+    {
+      allusers.get({
+        success:function(re){
+          if(re){
+            console.log(re)
+            for(i = 0; i < re.data.length; i++){
+              if ((n == re.data[i])&&(im == re.data[i])){
+                console.log("cvbn");
+                app.globalData.myprovince = re[i].myprovince
+                that.setData({
+                  exist: 1
+                })
                 break;
               }
-            }if (ok == 0){ // 没有在数据库中，就加入数据库
-              allusers.add({
-                data:{
-                  username: res.userInfo.nickName,
-                  userimage: res.userInfo.avatarUrl,
-                  WechatID:res.result.wxInfo.OPENID
-                }
-              })
             }
           }
+        }
+      })
+      if((that.data.ok == true)&&(that.data.exist == 0)){ // 没有在数据库中，就加入数据库
+        //获取当前位置
+        wx.getLocation({
+          success: (res) => {
+            console.log(res)
+            that.setData({
+              userlatitude: res.latitude,
+              userlongitude: res.longitude
+            })
+            // 判断城市
+            if((that.data.userlatitude > 20.30) && (that.data.userlatitude < 28.22) && (that.data.userlongitude > 115.50) && (that.data.userlatitude < 120.40)){
+              that.setData({
+                province: "Fujian"
+              })
+              
+            }else if((that.data.userlatitude > 39) && (that.data.userlatitude < 40) && (that.data.userlongitude > 115.50) && (that.data.userlatitude < 117)){
+              that.setData({
+                province: "Beijing"
+              })
+              app.globalData.myprovince = "Beijing"
+              
+            }else if((that.data.userlatitude > 38.33) && (that.data.userlatitude < 40.16) && (that.data.userlongitude > 116.42) && (that.data.userlatitude < 118.20)){
+              that.setData({
+                province: "Tianjing"
+              })
+              
+            }else if((that.data.userlatitude > 31.1) && (that.data.userlatitude < 31.2) && (that.data.userlongitude > 121.25) && (that.data.userlatitude < 212.35)){
+              that.setData({
+                province: "Shanghai"
+              })
+              
+            }else if((that.data.userlatitude > 105.17) && (that.data.userlatitude < 110.11) && (that.data.userlongitude > 115.50) && (that.data.userlatitude < 117)){
+              that.setData({
+                province: "Chongqing"
+              })
+              
+            }else if((that.data.userlatitude > 118.01) && (that.data.userlatitude < 123.1) && (that.data.userlongitude > 27.02) && (that.data.userlatitude < 31.11)){
+              that.setData({
+                province: "Zhejiang"
+              })
+            }app.globalData.myprovince = that.data.province
+            console.log(app.globalData.myprovince)
+            allusers.add({
+              data:{
+                name: app.globalData.username,
+                img: app.globalData.userimage,
+                myprovince: that.data.province,
+                mycity: ""
+              }
+            });
+          }
         })
-        app.globalData.username=res.userInfo.nickName,
-        app.globalData.userimage=res.userInfo.avatarUrl,
-        app.globalData.WechatID=res.result.wxInfo.OPENID
-      },
-      fail:function(){
       }
-    })//跳转到tabbar页面
-    wx.switchTab({
-      url: '../2_1home/home'})
+      wx.switchTab({
+        url: '../2_1home/home'})
+    }
+  },
+  onLoad: function (options) {
+    
   },
 
 })
+
