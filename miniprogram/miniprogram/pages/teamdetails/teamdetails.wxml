@@ -1,0 +1,43 @@
+<!--pages/teamdetails/teamdetails.wxml-->
+<image style="position: fixed; width: 87rpx; height: 87rpx; display: inline-block; box-sizing: border-box; left: 518rpx; top: 1058rpx;z-index: 5;" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
+<image style="position: fixed; width: 87rpx; height: 87rpx; display: inline-block; box-sizing: border-box; left: 638rpx; top: 1058rpx;z-index: 5;" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
+<view class="groupcard"
+    style="position: relative; left: 29rpx; top: 50rpx; width: 697rpx; height: 230rpx; display: block; box-sizing: border-box">
+    <image style="width: 230rpx; height: 230rpx; display: inline-block; box-sizing: border-box; z-index: 1"></image>
+    <text style="position: relative; left: 0rpx; top: -190rpx">aaaaaaaa</text>
+</view>
+<block>
+    <view style="display: flex; flex-direction: row; height: 87rpx; padding: 10px; margin: 10px; width: 697rpx; box-sizing: border-box; position: relative; left: 5rpx; top: 26rpx">
+        <view bindtap="showSchedule" style="background-color: #ffffff; width: 326rpx; height: 52rpx; display: block; box-sizing: border-box; position: relative; left: -5rpx; top: 3rpx">
+            <text  style="position: relative; left: 104rpx; top: 5rpx">Schedule</text>
+        </view>
+        <view bindtap="showcommunity" style="background-color: #ffffff; width: 326rpx; height: 52rpx; display: block; box-sizing: border-box; position: relative; left: -5rpx; top: 3rpx">
+                <text style="position: relative; left: 47rpx; top: 5rpx">Community</text>
+        </view>
+    </view>
+</block>
+<block>
+<view wx:if="{{Scheduleshow==true}}">
+<block wx:for="{{procesing}}" wx:key="index" style="position: relative;">
+ <view wx:if="{{index<stage}}" style="width: 750rpx; height: 150rpx; display: block; box-sizing: border-box">
+ <image style="position: relative; left: 50rpx; top: -113rpx; width: 59rpx; height: 59rpx; display: inline-block; box-sizing: border-box" src="/../lab7/_processing1.png" />
+ <image style="position: relative; left: -10rpx; top: 6rpx; width: 59rpx; height: 148rpx; display: inline-block; box-sizing: border-box" src="/../lab7/_processing2.png" />
+ </view>
+ <view wx:if="{{index==stage}}" style="width: 750rpx; height: 150rpx; display: block; box-sizing: border-box">
+ <image style="position: relative; left: 50rpx; top: -113rpx; width: 59rpx; height: 59rpx; display: inline-block; box-sizing: border-box; z-index: 2;" src="/../lab7/_processing3.png" />
+ <image style="position: relative; left: -10rpx; top: 6rpx; width: 59rpx; height: 148rpx; display: inline-block; box-sizing: border-box" src="/../lab7/_processing2.png" />
+ </view>
+ <view wx:if="{{index>stage}}" style="width: 750rpx; height: 150rpx; display: block; box-sizing: border-box">
+ <image style="position: relative; left: 50rpx; top: -113rpx; width: 59rpx; height: 59rpx; display: inline-block; box-sizing: border-box; z-index: 2;" src="/../lab7/_processing3.png" />
+ <image style="position: relative; left: -10rpx; top: 6rpx; width: 59rpx; height: 148rpx; display: inline-block; box-sizing: border-box" src="/../lab7/_processing2.png" />
+ </view>
+</block>
+ </view>
+<view wx:if="{{Communityshow==true}}" style=" background: #ffffff; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+    <view style="position: relative; width: 708rpx; background: #d1d1d1; height: 366rpx; display: block; box-sizing: border-box; left: 22rpx; top: 5rpx"></view>
+    <view style="position: relative; width: 298rpx; background: #d1d1d1; height: 270rpx; display: block; box-sizing: border-box; left: 22rpx; top: 31rpx"></view>
+    <view style="position: relative; width: 387rpx; background: #d1d1d1; height: 814rpx; display: block; box-sizing: border-box; left: 343rpx; top: -240rpx"></view>
+    <view style="position: relative; width: 298rpx; background: #d1d1d1; height: 521rpx; display: block; box-sizing: border-box; left: 22rpx; top: -750rpx"></view>
+</view>
+</block>
+
