@@ -10,6 +10,9 @@ App({
     followingnum: 0,
     followernum: 0,
     sharelocation: 1,
+    myid: "",
+    myprovince: "",
+    mycity: ""
   },
   
   onLaunch: function () {
