@@ -1,5 +1,0 @@
-/**app.wxss**/
-.indexbg{
-  width: 98vw;
-  height: 98vh;
-}
