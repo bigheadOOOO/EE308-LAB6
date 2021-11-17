@@ -19,30 +19,42 @@
   </view>
 </view>
 <!-- 根据筛选结果显示后端返回用户所在的组-->
+<!-- 显示全部-->
 <block wx:if="{{screenDown.screen==0}}">
-<!-- 放显示内容代码 建议模块化 下面是样例-->
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 47rpx">My project</text>
-  <view wx:for="{{groupnumber}}" wx:key="index">
-    <view class="groupcard" style="position: relative; left: 52rpx; top: 104rpx">
-        <image class="cardimage" style="position:relativey;left: 52rpx; top: 104rpx"></image>
+  <view wx:for="{{followteamlist}}" wx:key="index1" data-index="{{index}}" bindtap="getmyteamandhop">
+    <view class="groupcard" style="position: relative; left: 64rpx; top: 71rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
     </view>
-  </view>  
+    <view class="protect" style="display: block; box-sizing: border-box"></view>
+  </view> 
+  <text class="subtitleform" style="position: relative; left: 36rpx; top: 47rpx">My follow</text> 
+  <view wx:for="{{myteamlist}}" wx:key="index"  data-index="{{index}}" bindtap="getfollowteamandhop">
+    <view class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
+    </view>
+    <view class="protect" style="display: block; box-sizing: border-box"></view>
+  </view> 
 </block>
+<!--my project-->
 <block wx:if="{{screenDown.screen==1}}">
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 2rpx">Only my project</text>
-  <view wx:for="{{groupnumber}}" wx:key="index">
-    <view class="groupcard" style="position: relative; left: 52rpx; top: 104rpx">
-        <image class="cardimage" style="position:relativey;left: 52rpx; top: 104rpx"></image>
+  <view wx:for="{{followteamlist}}" wx:key="index" data-index="{{index}}" bindtap="getmyteamandhop">
+    <view class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
     </view>
-  </view>
+    <view class="protect" style="display: block; box-sizing: border-box"></view>
+  </view> 
 </block>
+<!--my follow-->
 <block wx:if="{{screenDown.screen==2}}">
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 2rpx">Only my follow</text>
-  <view wx:for="{{groupnumber}}" wx:key="index">
-    <view class="groupcard" style="position: relative; left: 52rpx; top: 104rpx">
-        <image class="cardimage" style="position:relativey;left: 52rpx; top: 104rpx"></image>
+  <view wx:for="{{myteamlist}}" wx:key="index" data-index="{{index}}" bindtap="getfollowteamandhop">
+    <view class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
     </view>
-  </view>
+    <view class="protect" style="display: block; box-sizing: border-box"></view>
+  </view> 
 </block>
 
 

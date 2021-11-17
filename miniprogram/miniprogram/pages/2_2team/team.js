@@ -10,6 +10,8 @@ Page({
         screenDown: { screenDown:["All","Only my project","Only my follow"],screen:0},//screenDown筛选选项，screen对应索引，用于前段渲染判断
         screenFlag:false,//控制综合下拉框是否显示
         screenColor: false,
+        followteamlist:["team1","team2","team3"],
+        myteamlist:["myteam1","myteam2"],
       },
     
       /**
@@ -100,6 +102,17 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage: function () {
-    }
-    
+    },
+    getfollowteamandhop: function(e){
+      console.log(e.currentTarget.dataset.index)
+      wx.navigateTo({
+        url: '',
+      })
+    },
+    getmyteamandhop: function(e){
+      console.log(e.currentTarget.dataset.index)
+      wx.navigateTo({
+        url: '',
+    })
+  }
 })

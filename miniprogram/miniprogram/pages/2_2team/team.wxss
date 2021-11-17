@@ -82,5 +82,17 @@
   .screen-color>text{
     color: #F46458;
   }
+  .groupcard{
+    height: 197rpx;
+    display: block; 
+    box-sizing: border-box; 
+    width: 582rpx; 
+    background: #d3d3d3; 
+    z-index: 0;
+}
+.protect{
+  height: 20rpx;
+  width: 582rpx; 
+}
   
 
