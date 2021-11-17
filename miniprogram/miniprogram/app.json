@@ -1,59 +1,59 @@
 {
-  "pages": [
-    "pages/1_login/login",
-    "pages/2_1home/home",
-    "pages/2_2team/team",
-    "pages/2_4mine/mine",
-    "pages/2_4mine/subscription/1_subscription/1_subscription",
-    "pages/2_4mine/subscription/2_subscription/2_subscription",
-    "pages/2_1home/beginnerguideline/beginner",
-    "pages/othersaccount/othersaccount",
-    "pages/2_4mine/sharelocation/location",
-    "pages/2_3message/message"
-  ],
-  "window": {
-    "backgroundTextStyLe": "light",
-    "navigationBarBackgroundColor": "#B4AAFF",
-    "navigationBarTitleText": "GCTAS",
-    "navigationBarTextStyLe": "black"
-  },
-  "permission":{
-    "scope.userLocation":{
-      "desc":"请点击确定"
-    }
-  },
-  "tabBar": {
-    "backgroundColor": "#B4AAFF",
-    "color": "#000000",
-    "selectedColor": "#FFFFFF",
-    "list": [
-      {
-        "pagePath": "pages/2_1home/home",
-        "text": "HOME",
-        "iconPath": "lab7/home.png",
-        "selectedIconPath": "lab7/_home.png"
-      },
-      {
-        "pagePath": "pages/2_2team/team",
-        "text": "TEAM",
-        "iconPath": "lab7/team.png",
-        "selectedIconPath": "lab7/_team.png"
-      },
-      {
-        "pagePath": "pages/2_3message/message",
-        "text": "MESSAGE",
-        "iconPath": "lab7/message.png",
-        "selectedIconPath": "lab7/_message.png"
-      },
-      {
-        "pagePath": "pages/2_4mine/mine",
-        "text": "MINE",
-        "iconPath": "lab7/mine.png",
-        "selectedIconPath": "lab7/_mine.png"
-      }
-    ]
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+    "pages": [
+        "pages/1_login/login",
+        "pages/2_1home/home",
+        "pages/2_2team/team",
+        "pages/2_4mine/mine",
+        "pages/2_4mine/subscription/1_subscription/1_subscription",
+        "pages/2_4mine/subscription/2_subscription/2_subscription",
+        "pages/2_1home/beginnerguideline/beginner",
+        "pages/othersaccount/othersaccount",
+        "pages/2_4mine/sharelocation/location",
+        "pages/2_3message/message",
+        "pages/teamdetails/teamdetails"
+    ],
+    "window": {
+        "backgroundTextStyLe": "light",
+        "navigationBarBackgroundColor": "#B4AAFF",
+        "navigationBarTitleText": "GCTAS",
+        "navigationBarTextStyLe": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "请点击确定"
+        }
+    },
+    "tabBar": {
+        "backgroundColor": "#B4AAFF",
+        "color": "#000000",
+        "selectedColor": "#FFFFFF",
+        "list": [
+            {
+                "pagePath": "pages/2_1home/home",
+                "text": "HOME",
+                "iconPath": "lab7/home.png",
+                "selectedIconPath": "lab7/_home.png"
+            },
+            {
+                "pagePath": "pages/2_2team/team",
+                "text": "TEAM",
+                "iconPath": "lab7/team.png",
+                "selectedIconPath": "lab7/_team.png"
+            },
+            {
+                "pagePath": "pages/2_3message/message",
+                "text": "MESSAGE",
+                "iconPath": "lab7/message.png",
+                "selectedIconPath": "lab7/_message.png"
+            },
+            {
+                "pagePath": "pages/2_4mine/mine",
+                "text": "MINE",
+                "iconPath": "lab7/mine.png",
+                "selectedIconPath": "lab7/_mine.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
 }
-
