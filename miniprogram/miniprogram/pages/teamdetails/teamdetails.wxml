@@ -1,6 +1,6 @@
 <!--pages/teamdetails/teamdetails.wxml-->
-<image style="position: fixed; width: 87rpx; height: 87rpx; display: inline-block; box-sizing: border-box; left: 518rpx; top: 1058rpx;z-index: 5;" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
-<image style="position: fixed; width: 87rpx; height: 87rpx; display: inline-block; box-sizing: border-box; left: 638rpx; top: 1058rpx;z-index: 5;" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
+<image style="position: fixed; width: 120rpx; height: 120rpx; display: block; box-sizing: border-box; left: 490rpx; top: 1043rpx; z-index: 5" src="/../lab7/team1.png" bindtap="hoptomember" />
+<image style="position: fixed; width: 120rpx; height: 120rpx; display: inline-block; box-sizing: border-box; left: 610rpx; top: 1043rpx; z-index: 5" src="/../lab7/edit.png" />
 <view class="groupcard"
     style="position: relative; left: 29rpx; top: 50rpx; width: 697rpx; height: 230rpx; display: block; box-sizing: border-box">
     <image style="width: 230rpx; height: 230rpx; display: inline-block; box-sizing: border-box; z-index: 1"></image>
@@ -37,7 +37,7 @@
     <view style="position: relative; width: 708rpx; background: #d1d1d1; height: 366rpx; display: block; box-sizing: border-box; left: 22rpx; top: 5rpx"></view>
     <view style="position: relative; width: 298rpx; background: #d1d1d1; height: 270rpx; display: block; box-sizing: border-box; left: 22rpx; top: 31rpx"></view>
     <view style="position: relative; width: 387rpx; background: #d1d1d1; height: 814rpx; display: block; box-sizing: border-box; left: 343rpx; top: -240rpx"></view>
-    <view style="position: relative; width: 298rpx; background: #d1d1d1; height: 521rpx; display: block; box-sizing: border-box; left: 22rpx; top: -750rpx"></view>
+    <view style="position: relative; width: 298rpx; background: #d1d1d1; height: 521rpx; display: block; box-sizing: border-box; left: 22rpx; top: -760rpx"></view>
 </view>
 </block>
 

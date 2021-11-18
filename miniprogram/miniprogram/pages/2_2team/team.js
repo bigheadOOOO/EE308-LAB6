@@ -103,16 +103,16 @@ Page({
      */
     onShareAppMessage: function () {
     },
-    getfollowteamandhop: function(e){
+    getfollowteam: function(e){
       console.log(e.currentTarget.dataset.index)
-      wx.navigateTo({
-        url: '',
-      })
     },
-    getmyteamandhop: function(e){
+    getmyteam: function(e){
       console.log(e.currentTarget.dataset.index)
+    },
+    todetails:function(){
       wx.navigateTo({
-        url: '',
-    })
-  }
+        url: '../teamdetails/teamdetails',
+      })
+    }
+
 })

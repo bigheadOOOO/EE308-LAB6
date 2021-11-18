@@ -83,7 +83,7 @@ Page({
     },
     hoptomember:function(){
         wx.navigateTo({
-            url: '',
+            url: '../groupmember/groupmember',
     })
-    }
+    },
 })
