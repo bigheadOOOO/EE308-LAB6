@@ -1,0 +1,25 @@
+/* pages/8_Account/Account.js.wxss */
+
+.Follow{
+    background-color: rgb(219, 204, 255);
+    top: 2%;
+    right: 2%;
+    width: 28% !important;
+    height: 7% !important;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    font-size: x-small;
+  }
+
+  .Unfollow{
+    background-color: rgb(219, 204, 255);
+    top: 6%;
+    right: 2%;
+    width: 28% !important;
+    height: 7% !important;
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    font-size: x-small;
+  }
