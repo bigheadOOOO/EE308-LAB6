@@ -10,7 +10,8 @@
         "pages/othersaccount/othersaccount",
         "pages/2_4mine/sharelocation/location",
         "pages/2_3message/message",
-        "pages/teamdetails/teamdetails"
+        "pages/teamdetails/teamdetails",
+        "pages/groupmember/groupmember"
     ],
     "window": {
         "backgroundTextStyLe": "light",

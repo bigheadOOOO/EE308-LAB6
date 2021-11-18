@@ -12,7 +12,10 @@ App({
     sharelocation: 1,
     myid: "",
     myprovince: "",
-    mycity: ""
+    mycity: "",
+    tagetgroup:"",
+    tagetperson:"",
+    editauthority:"1"
   },
   
   onLaunch: function () {
