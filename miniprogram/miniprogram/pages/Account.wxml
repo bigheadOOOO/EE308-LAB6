@@ -1,0 +1,22 @@
+<!--pages/8_Account/Account.js.wxml-->
+<text>pages/8_Account/Account.js.wxml</text>
+<!--pages/2_4mine/mine.wxml-->
+<view>
+  <button class="follow" bindtap="clickfollow">Follow</button>
+  <button class="follow" bindtap="clickunfollow">Unfollow</button>
+  <!-- image and username -->
+  <image class="Accountimage" src="{{Accountimage}}"></image>
+  <text class="Accountname" style="font-weight:bold; font-family:'宋体';">{{Accountname}}</text>
+
+  <!-- community condition -->
+  <text style="top:80px; left:15px; position: absolute; color:gray;">{{numoffollowering}} <text style="left: 3px; position: relative; color: rgb(104, 103, 103);  font-family: 'Times New Roman';">Following</text></text> 
+  <text style="top:80px; left:115px; position: absolute; color:gray;">{{numoffollower}} <text style="left: 3px; position: relative;color: rgb(104, 103, 103); font-family: 'Times New Roman'">Followers</text></text> 
+
+  <!-- Two subpages' enterances -->
+  <!-- collection -->
+  <text class="Community">Community</text>
+  <!-- collections -->
+  <view class="Community">
+  </view>
+</view>
+
