@@ -1,0 +1,12 @@
+/* pages/groupmember/groupmember.wxss */
+  .subtitleform{
+    color:gray;
+    font-family: cursive;
+    font-size: 25px;
+    font-style: normal;
+    position: relative;
+  }
+  .protect{
+    height: 20rpx;
+    width: 582rpx; 
+  }
