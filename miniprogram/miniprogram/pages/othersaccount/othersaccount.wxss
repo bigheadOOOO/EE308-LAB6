@@ -12,13 +12,13 @@
   top: 20px;
   height: 50px;
   width: 50px;
-  position: relative;
+  position:absolute;
   z-index: 0;
 }
 
 .hisname{
-  left: 28px;
-  top: -15px;
+  left: 15%;
+  top: 0%;
   position: relative;
   z-index: 0;
 }
@@ -28,5 +28,5 @@
   right: 9%;
   width: 55px;
   height: 55px;
-  position: relative;
+  position: absolute;
 }

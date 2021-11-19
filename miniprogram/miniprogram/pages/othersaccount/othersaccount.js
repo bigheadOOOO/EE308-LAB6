@@ -1,22 +1,51 @@
 // pages/othersaccount/othersaccount.js
+const app = getApp()
+
 const db = wx.cloud.database()
-const mysubscription = db.collection("mysubscription")
+const mysubscrption = db.collection("mysubscrption")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    hisimage: "",
-    hisname: "",
+    hisid: "",
+    hisimage: app.globalData.targetpersonimg,
+    hisname: app.globalData.tagetperson, 
+    subscript: 1
   },
 
+  subscription:function(){
+    var that = this
+    that.setData({
+      subscript: 0
+    })
+    mysubscrption.add({
+      data:{
+        friendid: that.data.hisid,
+        friendname: that.data.hisname,
+        friendimg: that.data.hisimage,
+      }
+    })
+  },
+
+  unsubscript: function(){
+    var that = this
+    that.setData({
+      subscript: 1
+    }),
+    db.collection('mysubscrption').where({
+      friendid: that.data.hisid
+    }).remove().then(res=>{
+      console.log(res)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -35,7 +64,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

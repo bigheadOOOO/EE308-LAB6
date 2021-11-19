@@ -5,10 +5,8 @@
   <image class="hisimage" src="{{hisimage}}" style="position: relative; left: 94rpx; top: 87rpx"></image>
   <text class="hisname" style="font-weight:bold; font-family:'宋体';">{{hisname}}</text>
   <view>
-    <image class="subscripthim" src="https://s3.bmp.ovh/imgs/2021/11/d773bb0c1a1575bd.png" style="position: absolute; "></image>
-    <view bindtap="subscript" style="color: dimgray; font-weight: bold; width: 183rpx; height: 50rpx; right: 5%; top: 15%; position: absolute">Subscript{{hisname}}</view>
+    <image  class="subscripthim" bindtap="subscription" src="https://s3.bmp.ovh/imgs/2021/11/d773bb0c1a1575bd.png" style="position: absolute; "></image>
+    <view bindtap="subscript" style="color: dimgray; font-weight: bold; width: 183rpx; height: 50rpx; right: 5%; top: 15%; position: absolute">Subscript</view>
   </view>
-  
-  
 </view>
 
