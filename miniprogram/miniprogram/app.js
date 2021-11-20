@@ -13,11 +13,9 @@ App({
     myid: "",
     myprovince: "",
     mycity: "",
-    tagetgroup:"",
-    tagetperson:"Otheruser",
-    targetpersonid: "",
-    targetpersonimg: "https://s3.bmp.ovh/imgs/2021/10/77a830cbddfff9a8.png",
-    editauthority:"1"
+    tagetgroup:"Duomaoguai",
+    tagetperson:"",
+    tagertpersonimg:""
   },
   
   onLaunch: function () {
