@@ -1,0 +1,10 @@
+/* pages/teamdetails/teamdetails.wxss */
+.groupcard{
+    height: 197rpx;
+    display: block; 
+    box-sizing: border-box; 
+    width: 582rpx; 
+    background: #d3d3d3; 
+    height: 197rpx;
+    z-index: 0;
+}

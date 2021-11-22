@@ -1,0 +1,197 @@
+/* pages/2_2team/team.wxss */
+.titleform{
+    color:gray;
+    font-family: cursive;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+  }
+  .subtitleform{
+    color:gray;
+    font-family: cursive;
+    font-size: 15px;
+    font-style: normal;
+    position: relative;
+  }
+  .screen{
+    position: fixed;
+    top: 88rpx;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  .screen>.screen-name{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 28rpx;
+    color: #666;
+    line-height: 100rpx;
+  }
+  .screen>.screen-name>.iconfont{
+    font-size: 12rpx;
+    margin-left: 8rpx;
+  }
+  
+  .drop-down-background{
+    position: fixed;
+    top: 100rpx;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .drop-down-flex{
+    position: fixed;
+    top: 100rpx;
+    left: 360rpx;
+    width: 100%;
+    z-index: 222;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .drop-down{
+    width: 100%;
+    padding: 0 24rpx;
+    background: #fff;
+    height: 0rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #666;
+    transition: all 300ms;
+    overflow: hidden;
+  }
+  .down-active{
+    color: #F46458;
+  }
+  .down-show{
+    height: 88rpx;
+  }
+  .iconfontAnimation{
+    transform: rotate(180deg);
+    transition: all 300ms;
+  }
+  .screen-color>text{
+    color: #F46458;
+  }
+  .groupcard{
+    height: 197rpx;
+    display: block; 
+    box-sizing: border-box; 
+    width: 582rpx; 
+    background: #d3d3d3; 
+    z-index: 0;
+}
+.protect{
+  height: 20rpx;
+  width: 582rpx; 
+}
+.up{
+  position: absolute;
+  z-index: 1;
+}
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+  z-index: 2;
+}
+
+.toast-title {
+  padding-left: 5%;
+  background-color: #2196f3;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+  z-index: 2;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  z-index: 2;
+}
+
+.toast-button {
+  display: flex;
+  z-index: 2;
+}
+
+.button1 {
+  width: 50%;
+  z-index: 2;
+}
+
+.button2 {
+  width: 50%;
+  z-index: 2;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: red;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+  z-index: 2;
+}
+
+.button2 button{
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+  z-index: 2;
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  z-index: 2;
+}
+
