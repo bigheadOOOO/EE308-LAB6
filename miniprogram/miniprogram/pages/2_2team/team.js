@@ -1,10 +1,13 @@
 // pages/2_2team/team.js
+const app = getApp()
+const db = wx.cloud.database()
+const group=db.collection("Group")
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
+        show: false ,
         searchResult:false,
         screen:"All",
         screenDown: { screenDown:["All","Only my project","Only my follow"],screen:0},//screenDown筛选选项，screen对应索引，用于前段渲染判断
@@ -12,6 +15,7 @@ Page({
         screenColor: false,
         followteamlist:["team1","team2","team3"],
         myteamlist:["myteam1","myteam2"],
+        temp:""
       },
     
       /**
@@ -48,11 +52,15 @@ Page({
           brandFlag: false
         })
       },
+      createteam:function(){
+        myteamlist.push
+      },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+
 
     },
 
@@ -113,6 +121,57 @@ Page({
       wx.navigateTo({
         url: '../teamdetails/teamdetails',
       })
-    }
+    },
+    show:function(){
+      if(this.data.show){
+        this.setData({
+          show:false
+        })
+      }else{
+        this.setData({
+          show:true
+        })
+      }
+    },
+    confirm : function(){
+      this.setData({
+        show:false
+      })
+    } ,
+    cancel: function(){
+      this.setData({
+        
+      })
+    } ,
+    setValue: function (e) {
+      var that=this;
+      var val = e.detail.value;
+      this.setData({
+          temp:val
+      })
 
+      console.log(this.data.myteamlist)
+    },
+    compare: function(){
+      var that=this;
+      var newlist=this.data.myteamlist;
+      var val=this.data.temp;
+      newlist.push(val)
+      this.setData({
+        myteamlist:newlist,
+        show:false
+      })
+      group.add({
+        name:val,
+        leader:["app.globalData.username"],
+        members:[],
+        processing:[[],[],0],
+        processingifo:[],
+        img:"",
+        announcement:"",
+        collection:'',
+        communicationchannel:"",
+        follow:[]
+      })
+    }
 })

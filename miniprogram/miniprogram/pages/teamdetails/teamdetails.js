@@ -22,7 +22,7 @@ Page({
     groupimg:"/../lab7/GCTAS.jpg",
     groupname:"duomaiguai",
     Role:"member",
-    leaderlist:[],
+    leaderlist:["c","d"],
     leaderimg:[],
     leaderifo:[],
     memberlist:["a","b"],
