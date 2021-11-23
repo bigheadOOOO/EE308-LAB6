@@ -1,12 +1,17 @@
-# 云开发 quickstart
+# EE308-LAB6
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+## Code Specification
+- indentation: Same indent is used for the same layer. Next layer will have one more tab.
+- Variable naming: Use small letters and underlines and named by its usage.For example:
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+		index_of_elseif = []  # a list stored all indexes of "else if"
+- Maximum number of characters per line: Every line does not exceed 80 characters
+- Maximum number of function lines
+- Function and class naming: Use small letters and capital. For example:
 
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+		def getResult():
+				
+- Blank line rule: There are two empty lines above and beneath the function definition respectively, one blank lin beneath a cyle.  
+- Annotation rules: Tab two space between code and a line annotation. 
+- Space before and after operator
+- String: Only use single quotation mards.
