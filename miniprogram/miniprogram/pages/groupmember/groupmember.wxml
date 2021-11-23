@@ -3,14 +3,16 @@
 <text class="subtitleform" style="position: relative; left: 19rpx; top: 5rpx">leader</text>
 <view wx:for="{{leaderlist}}" wx:key="index1" data-index="{{index}}" bindtap="getleader">
     <view bindtap="tootheraccount" style="width: 750rpx; background: #d1d1d1; height: 207rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx">
-        <image style="position: relative; width: 218rpx; height: 207rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
+        <image style="position: relative; width: 218rpx; height: 207rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx" src="/../lab7/GCTAS.jpg" />
+        <text style="position: relative;">{{leaderlist[index]}}</text>
     </view>
     <view class="protect" style="width: 743rpx; height: 5rpx; display: block; box-sizing: border-box;"></view>
 </view>
 <text class="subtitleform" style="position: relative; left: 20rpx; top: -5rpx">Member</text>
 <view wx:for="{{memberlist}}" wx:key="index1" data-index="{{index}}" bindtap="getmember">
     <view bindtap="tootheraccount" style="width: 750rpx; background: #d1d1d1; height: 207rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: 0rpx">
-        <image style="position: relative; width: 218rpx; height: 207rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx" src="https://mmbiz.qpic.cn/mmbiz_png/icTdbqWNOwNQ0ia79enzYJBsZ3CIkLQGe39qeOxbpT9oM9KaCthzBa0PF75xzBGjZQGlM69TDggxpNX7ACibCjjtw/0?wx_fmt=png&t=1614824466" />
+        <image style="position: relative; width: 218rpx; height: 207rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx" src="/../lab7/GCTAS.jpg" />
+        <text style="position: relative;">{{memberlist[index]}}</text>
     </view>
     <view class="protect" style="width: 743rpx; height: 5rpx; display: block; box-sizing: border-box;"></view>
 </view>

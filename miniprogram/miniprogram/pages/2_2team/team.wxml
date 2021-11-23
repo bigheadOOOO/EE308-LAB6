@@ -24,24 +24,28 @@
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 47rpx">My project</text>
   <view wx:for="{{myteamlist}}" wx:key="index1" data-index="{{index}}" bindtap="getmyteam">
     <view bindtap="todetails" class="groupcard" style="position: relative; left: 66rpx; top: 71rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
-        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box" src="/../lab7/GCTAS.jpg"></image>
+        <text style="position: relative; left: 0rpx; top: -102rpx">{{ followteamlist[index]}}</text>
     </view>
     <view class="protect" style="display: block; box-sizing: border-box"></view>
   </view> 
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 47rpx">My follow</text> 
   <view wx:for="{{followteamlist}}" wx:key="index"  data-index="{{index}}" bindtap="getfollowteam">
     <view bindtap="todetails" class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
-        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box" src="/../lab7/GCTAS.jpg"></image>
+        <text style="position: relative; left: 0rpx; top: -146rpx">{{ followteamlist[index]}}</text>
     </view>
     <view class="protect" style="display: block; box-sizing: border-box"></view>
+    
   </view> 
 </block>
 <!--my project-->
 <block wx:if="{{screenDown.screen==1}}">
   <text class="subtitleform" style="position: relative; left: 36rpx; top: 2rpx">Only my project</text>
-  <view wx:for="{{followteamlist}}" wx:key="index" data-index="{{index}}" bindtap="getmyteam">
+  <view wx:for="{{myteamlist}}" wx:key="index" data-index="{{index}}" bindtap="getmyteam">
     <view bindtap="todetails" class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
-        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
+        <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box" src="/../lab7/GCTAS.jpg"></image>
+        <text style="position: relative; left: 0rpx; top: -102rpx">{{ followteamlist[index]}}</text>
     </view>
     <view class="protect" style="display: block; box-sizing: border-box"></view>
   </view> 
@@ -52,6 +56,7 @@
   <view wx:for="{{myteamlist}}" wx:key="index" data-index="{{index}}" bindtap="getfollowteam">
     <view bindtap="todetails" class="groupcard" style="position: relative; left: 66rpx; top: 73rpx; width: 638rpx; height: 186rpx; display: block; box-sizing: border-box">
         <image class="cardimage" style="position: relativey; left: 52rpx; top: 104rpx; width: 202rpx; height: 186rpx; display: inline-block; box-sizing: border-box"></image>
+        <text style="position: relative; left: 0rpx; top: -102rpx">{{ followteamlist[index]}}</text>
     </view>
     <view class="protect" style="display: block; box-sizing: border-box"></view>
   </view> 
